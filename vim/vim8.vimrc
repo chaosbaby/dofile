@@ -644,4 +644,4 @@ if &term =~ '256color'
   set t_ut=
 endif
 " colorscheme base16-monokai
-" colorscheme molokai
+colorscheme molokai
