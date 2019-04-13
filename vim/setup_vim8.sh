@@ -20,8 +20,8 @@ cd vim
             --enable-gui=gtk2 \
             --enable-cscope \
             --prefix=/usr/local
-make VIMRUNTIMEDIR=/usr/share/vim/vim8
 
-sudo make
+sudo make VIMRUNTIMEDIR=/usr/share/vim/vim80
 sudo make install
+
 export PATH=/usr/local/bin:$PATH
