@@ -21,7 +21,8 @@ cd vim
             --enable-cscope \
             --prefix=/usr/local
 
-sudo make VIMRUNTIMEDIR=/usr/share/vim/vim80
+#sudo make VIMRUNTIMEDIR=/usr/share/vim/vim81
+sudo make
 sudo make install
 
 export PATH=/usr/local/bin:$PATH
