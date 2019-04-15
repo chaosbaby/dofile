@@ -14,25 +14,25 @@ git config --global user.name "chaos"
 git config --global credential.helper store
 
 # hub install
-cd ${doflesPath}/hub
-sh ${doflesPath}/hub/setup.sh
+cd ${dofilesPath}/hub
+sh ${dofilesPath}/hub/setup.sh
 
 # python3
-cd ${doflesPath}/python3
-sh ${doflesPath}/python3/setup_3.7.3.sh
+cd ${dofilesPath}/python3
+sh ${dofilesPath}/python3/setup_3.7.3.sh
 
 # vim8
-cd ${doflesPath}/vim
-sh ${doflesPath}/vim/setup_vim8.sh
+cd ${dofilesPath}/vim
+sh ${dofilesPath}/vim/setup_vim8.sh
 
 #vim8 plugins
-cd ${doflesPath}/vim
-sh ${doflesPath}/vim/setupVim8Plugins.sh
+cd ${dofilesPath}/vim
+sh ${dofilesPath}/vim/setupVim8Plugins.sh
 
 ## dofiles: tmux
-cd ${doflesPath}/tmux
-sh ${doflesPath}/tmux/setup.sh
+cd ${dofilesPath}/tmux
+sh ${dofilesPath}/tmux/setup.sh
 
 ## dofiles: zsh
-cd ${doflesPath}/zsh
-sh ${doflesPath}/zsh/setup.sh
+cd ${dofilesPath}/zsh
+sh ${dofilesPath}/zsh/setup.sh
