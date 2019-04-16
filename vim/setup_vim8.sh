@@ -8,25 +8,20 @@ sudo yum install ncurses ncurses-devel -y
 sudo yum install ncurses-devel.x86_64  -y
 mkdir ~/tool
 cd ~/tool
-if [ -d "/root/tool/vim-master" ];then
-echo "文件存在"
-else
-wget https://github.com/vim/vim/archive/master.zip
-unzip master.zip
-echo "文件不存在"
-fi
-cd vim-master
-cd src/
-
+git clone https://github.com/vim/vim.git
+cd vim
 ./configure --with-features=huge \
-        --enable-multibyte \
-        --enable-rubyinterp=yes \
-        --enable-python3interp=yes \
-        --with-python-config-dir=/usr/local/python3/lib/python3.7/config-3.7m-x86_64-linux-gnu \
-        --enable-perlinterp=yes \
-        --enable-luainterp=yes \
-        --enable-cscope \
-        --prefix=/usr/local
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-python3interp=yes \
+            --with-python3-config-dir=/usr/local/python3/lib/python3.7/config-3.7m-x86_64-linux-gnu \
+            --enable-perlinterp=yes \
+            --enable-luainterp=yes \
+            --enable-gui=gtk2 \
+            --enable-cscope \
+            --prefix=/usr/local
+make VIMRUNTIMEDIR=/usr/share/vim/vim8
+
 sudo make
 sudo make install
 export PATH=/usr/local/bin:$PATH
