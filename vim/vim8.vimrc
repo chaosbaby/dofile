@@ -643,5 +643,4 @@ let g:solarized_termtrans = 1
 if &term =~ '256color'
   set t_ut=
 endif
-" colorscheme base16-monokai
-colorscheme molokai
+" colorscheme base16-monokai " colorscheme molokai
