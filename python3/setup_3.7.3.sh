@@ -3,6 +3,7 @@ yum install libffi-devel -y
 yum install unzip wget -y
 yum install ctags cmake gcc-c++ python-devel -y
 yum install openssl-devel -y
+yum -y install sqlite-devel -y
 cd ~/tool
 if [ -d "/root/tool/python-3.7.3/" ];then
 echo "文件夹存在"
