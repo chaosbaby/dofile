@@ -8,18 +8,18 @@ yum install sqlite-devel -y
 yum install ntpdate -y
 ntpdate -u cn.pool.ntp.org
 cd ~/tool
-if [ -d "/root/tool/Python-3.8.1/" ];then
+if [ -d "/root/tool/Python-3.7.3/" ];then
 echo "文件夹存在"
 else
 echo "文件夹不存在"
 # wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
-wget https://www.python.org/ftp/python/3.8.1/Python-3.8.1.tar.xz
-tar -xvJf  Python-3.8.1.tar.xz
+wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
+tar -xvJf  Python-3.7.3.tar.xz
 fi
 mkdir /usr/local/python3 #创建编译安装目录
-cd Python-3.8.1
+cd Python-3.7.3
 # ./configure --prefix=/usr/local/python3 --with-ssl
-./configure --prefix=/usr/local/python3 --with-ssl --enable-optimizations
+./configure --prefix=/usr/local/python3 --with-ssl
 # make && make install
 make
 make install
