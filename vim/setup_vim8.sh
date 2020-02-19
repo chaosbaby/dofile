@@ -8,7 +8,8 @@ sudo yum install ncurses ncurses-devel -y
 sudo yum install ncurses-devel.x86_64  -y
 mkdir ~/tool
 cd ~/tool
-git clone https://github.com/vim/vim.git
+#git clone https://github.com/vim/vim.git
+git clone https://gitee.com/chaosbabay.com/vim.git
 cd vim
 ./configure --with-features=huge \
             --enable-multibyte \
@@ -26,3 +27,4 @@ sudo make
 sudo make install
 
 export PATH=/usr/local/bin:$PATH
+ln -s /usr/local/bin/vim /usr/bin/vim
