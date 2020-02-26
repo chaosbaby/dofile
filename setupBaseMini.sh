@@ -8,10 +8,8 @@ sudo yum update -y
 yum install net-tool -y #for wget
 
 #git setting
-yum install git -y
-git config --global user.email "50092526@qq.com"
-git config --global user.name "chaos"
-git config --global credential.helper store
+cd ${dofilesPath}/git
+sh ${dofilesPath}/git/setup.sh
 
 # hub install
 cd ${dofilesPath}/hub
