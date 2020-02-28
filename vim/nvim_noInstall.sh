@@ -5,7 +5,12 @@ rm /usr/bin/nvim -f
 ln -s ~/tool/nvim.appimage /usr/bin/nvim
 mkdir -p ~/.comfig/nvim/
 rm -f ~/.vimrc
-ln -s ~/tool/dofile/vim/init.vimrc ~/.vimrc
+
 echo 'set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
+ln -s ~/tool/dofile/vim/init.vimrc ~/.vimrc
 source ~/.vimrc' >> ~/.comfig/nvim/init.vim
+
+curFilePath=$(dirname $(readlink -f "$0"))
+echo $curFilePath
+ln $curFilePath/settings/plug $HOME/.config
