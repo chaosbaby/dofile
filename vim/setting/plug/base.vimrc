@@ -47,12 +47,12 @@ set listchars=tab:>-,trail:- "显示TAB健
 " autocmd BufWritePost ~/.config/nvim/init.vim source % " 让配置变更立即生效
 " autocmd BufWritePost $MYVIMRC source $MYVIMRC " 让配置变更立即生效
 " 让配置变更立即生效
-" nmap <F4> :source ~/.config/nvim/init.vim <CR>
 " Automatic reloading of .vimrc
 " autocmd! bufwritepost .vimrc source %
 if has("autocmd")
         autocmd! bufwritepost vimrc source ~/.vimrc
     endif
+nmap <F4> :source ~/.vimrc <CR>
 
 " change spacing for language specific
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2

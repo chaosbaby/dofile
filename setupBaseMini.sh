@@ -7,7 +7,7 @@ sudo yum update -y
 
 yum install net-tool -y #for wget
 
-#git setting
+git setting
 cd ${dofilesPath}/git
 sh ${dofilesPath}/git/setup.sh
 
@@ -15,7 +15,7 @@ sh ${dofilesPath}/git/setup.sh
 cd ${dofilesPath}/hub
 sh ${dofilesPath}/hub/setup.sh
 
-# python3
+python3
 cd ${dofilesPath}/python3
 sh ${dofilesPath}/python3/setup_3.7.3.sh
 
@@ -23,6 +23,6 @@ sh ${dofilesPath}/python3/setup_3.7.3.sh
 cd ${dofilesPath}/tmux
 sh ${dofilesPath}/tmux/setup.sh
 
-## dofiles: zsh
+# dofiles: zsh
 cd ${dofilesPath}/zsh
 sh ${dofilesPath}/zsh/setup.sh
