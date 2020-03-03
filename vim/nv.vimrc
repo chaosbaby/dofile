@@ -6,14 +6,8 @@ filetype plugin on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-" vundle 管理的插件列表必须位于 vundle#begin() 和 vundle#end() 之间
-" call vundle#begin()
+" vim-plug 管理的插件列表必须位于 vundle#begin() 和 vundle#end() 之间
 call plug#begin('~/.vim/plugged')
-" alternatively, pass a path where Vundle should install plugins
-"let path = '~/some/path/here'
-"call vundle#rc(path)
-
-" let Vundle manage Vundle, required
 " VERB {{{2
 Plug 'tpope/vim-surround'
 Plug  'tpope/vim-commentary'
@@ -46,7 +40,6 @@ Plug  'tomtom/tlib_vim'
 Plug  'garbas/vim-snipmate'
 Plug  'honza/vim-snippets'
 
-" Plug  'valloric/youcompleteme'
 
 " Use release branch (Recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

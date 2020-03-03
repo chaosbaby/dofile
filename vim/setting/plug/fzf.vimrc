@@ -1,7 +1,7 @@
-call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf', { 'do': './install --bin' }
-Plug 'junegunn/fzf.vim'
-call plug#end()
+" call plug#begin('~/.vim/plugged')
+" Plug 'junegunn/fzf', { 'do': './install --bin' }
+" Plug 'junegunn/fzf.vim'
+" call plug#end()
 noremap <silent> <C-p> :Files<CR>
 noremap <silent> <C-k> :Buffers<CR>
 

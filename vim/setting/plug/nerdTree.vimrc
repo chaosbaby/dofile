@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 " Plug  'preservim/nerdtree'
 Plug 'scrooloose/nerdtree'
 Plug  'Xuyuanp/nerdtree-git-plugin'
-Plug  'tomasr/molokai'
 " Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
