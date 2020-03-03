@@ -1,3 +1,4 @@
+
 " plug install {{{1
 " AUTOLOAD BUNDLE{{{2
 set nocompatible              " be iMproved, required
@@ -57,7 +58,6 @@ Plug  'SirVer/ultisnips'
 " Plug 'ervandew/supertab'
 " }}} SYNTAX & COMPLETION "
 " FIND USAGE DEFINITION {{{ "
-" Plug  'brookhong/cscope.vim'
 Plug  'easymotion/vim-easymotion'
 " }}} FIND USAGE DEFINITION "
 " TYPESCRIPT {{{2
@@ -555,30 +555,6 @@ let g:coc_global_extensions = [
             \  'coc-json',
             \]
 
-
-
-
-" FIND USAGE DEFINITION {{{ "
-
-nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
-nnoremap <leader>l :call ToggleLocationList()<CR>
-" s: Find this C symbol
-nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
-" g: Find this definition
-nnoremap  <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
-" d: Find functions called by this function
-nnoremap  <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
-" c: Find functions calling this function
-nnoremap  <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
-" t: Find this text string
-nnoremap  <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
-" e: Find this egrep pattern
-nnoremap  <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
-" f: Find this file
-nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
-" i: Find files #including this file
-nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
-"" }}}
 " easymotion {{{ "
 let g:EasyMotion_smartcase = 1
 "let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
@@ -615,26 +591,8 @@ syntax enable
 " jsx
 let g:jsx_ext_required = 0
 " }}}
-set encoding=utf-8
-set laststatus=2
-let g:Powerline_symbols = 'fancy'
-syntax enable
-" colorscheme base16-monokai
-set background=dark
-set t_Co=256
-hi Normal ctermfg=grey
-hi Normal ctermbg=black
-let g:solarized_termtrans = 1
-
-if &term =~ '256color'
-  set t_ut=
-endif
-" colorscheme base16-monokai
-" colorscheme molokai
 
 
-let g:ag_working_path_mode="r"
-let g:python3_host_prog = "/usr/local/python3/bin/python3.7"
 
 
 
@@ -647,15 +605,3 @@ endfunction
 
 
 
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }

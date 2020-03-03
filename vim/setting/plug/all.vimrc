@@ -1,3 +1,4 @@
+
 " plug install {{{1
 " AUTOLOAD BUNDLE{{{2
 set nocompatible              " be iMproved, required
@@ -630,21 +631,9 @@ if &term =~ '256color'
   set t_ut=
 endif
 " colorscheme base16-monokai
-" colorscheme molokai
-
+colorscheme molokai
 
 let g:ag_working_path_mode="r"
-let g:python3_host_prog = "/usr/local/python3/bin/python3.7"
-
-
-
-
-function! SourceVim(path)
-   if filereadable(a:path)
-       execute "source ".a:path
-   endif
-endfunction
-
 
 
 let g:NERDTreeIndicatorMapCustom = {
