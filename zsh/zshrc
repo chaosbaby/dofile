@@ -48,3 +48,4 @@ f() {
 
 
 export FZF_COMPLETION_TRIGGER='~~'
+expor tXDG_RUNTIME_DIR = '/tmp'
