@@ -46,3 +46,5 @@ f() {
     pushd "$dir" &>/dev/null && fzf -1 -e -q "$query" && popd &>/dev/null
 }
 
+
+export FZF_COMPLETION_TRIGGER='~~'
