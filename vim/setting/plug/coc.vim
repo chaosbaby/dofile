@@ -162,35 +162,28 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 let g:coc_global_extensions =[
             \'coc-snippets',
+            \'coc-explorer',
+            \'coc-gitignore',
             \'coc-lists',
+            \'coc-prettier',
+            \'coc-pairs',
             \'coc-python',
             \'coc-vimlsp',
             \'coc-json',
-            \'coc-gitignore',
-            \'coc-explorer',
             \'coc-git',
             \'coc-yank',
             \'coc-translator',
             \
             \'coc-html',
-            \'coc-tsserver',
-            \'coc-css',
-            \'coc-tailwindcss',
-            \'coc-stylelint',
-            \'coc-tslint',
-            \'coc-pyright',
-            \'coc-sourcekit',
-            \'coc-flutter'
             \]
-
-" let g:coc_global_extensions = [
-"             \     'coc-snippets',
-"             \    'coc-pairs',
-"             \  'coc-tsserver',
-"             \   'coc-eslint',
-"             \   'coc-prettier',
-"             \  'coc-json',
-"             \]
+            " \'coc-tsserver',
+            " \'coc-tslint',
+            " \'coc-tailwindcss',
+            " \'coc-css',
+            " \'coc-stylelint',
+            " \'coc-sourcekit',
+            " \'coc-pyright',
+            " \'coc-flutter',
 
 " }}} plug coc.nvim "
 
