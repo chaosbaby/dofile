@@ -52,6 +52,8 @@ else
 endif
 
 " Use `[g` and `]g` to navigate diagnostics
+" nmap <silent> zp <Plug>(GitGutterPrevHunk)
+" nmap <silent> zn <Plug>(GitGutterNextHunk)
 nmap <silent> zp <Plug>(coc-diagnostic-prev)
 nmap <silent> zn <Plug>(coc-diagnostic-next)
 
@@ -145,14 +147,14 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-let g:coc_global_extensions = [
-            \     'coc-snippets',
-            \    'coc-pairs',
-            \  'coc-tsserver',
-            \   'coc-eslint',
-            \   'coc-prettier',
-            \  'coc-json',
-            \]
+" let g:coc_global_extensions = [
+"             \     'coc-snippets',
+"             \    'coc-pairs',
+"             \  'coc-tsserver',
+"             \   'coc-eslint',
+"             \   'coc-prettier',
+"             \  'coc-json',
+"             \]
 
 " }}} plug coc.nvim "
 

@@ -14,12 +14,13 @@ endfunction
 
 call plug#begin('~/.vim/plugged')
 
-" FILESYSTEM {{{2 "
+" FILESYSTEM & NAVI {{{2 "
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
+Plug  'majutsushi/tagbar'
 " }}} FILESYSTEM "
 
 " VERB {{{2
@@ -30,9 +31,17 @@ Plug 'terryma/vim-multiple-cursors'
 " }}} VERB "
 
 " SYNTAX & COMPLETION {{{2
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug  'SirVer/ultisnips'
 Plug  'honza/vim-snippets'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'iamcco/coc-vimlsp', {'do': 'yarn install --frozen-lockfile'}
 " }}}SYNTAX & COMPLETION"
 "
 " GIT HELPER {{{2"
@@ -45,7 +54,6 @@ call plug#end()
 
 " }}} VIM-PLUG "
 
-
 source ~/.config/plug/base.vimrc
 source ~/.config/plug/coc.vim
 source ~/.config/plug/fzf.vimrc
@@ -53,19 +61,5 @@ source ~/.config/plug/fzf.vimrc
 "source ~/.config/plug/molokai.vimrc
 "source ~/.config/plug/all.vimrc
 colorscheme molokai
-"  adfasf "
 
 map <C-e> :NERDTreeToggle<CR>
-"syntax on
-"colorscheme onedark
-"
-
-" " " Bundle 'SirVer/ultisnips' {{{2
-" let g:UltiSnipsSnippetDirectories=['UltiSnips']
-" let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
-" let g:UltiSnipsExpandTrigger = '<Tab>'
-" let g:UltiSnipsListSnippets = '<C-Tab>'
-" let g:UltiSnipsJumpForwardTrigger = '<Tab>'
-" let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
-" let g:UltiSnipsEditSplit="vertical"
-" " " }}}

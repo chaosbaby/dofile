@@ -51,19 +51,6 @@ if has("autocmd")
     endif
 nmap <F4> :source ~/.vimrc <CR>
 
-" fold
-"设置折叠模式
-set foldcolumn=3
-"set foldopen=all "光标遇到折叠，折叠就打开
-"set foldclose=all "移开折叠时自动关闭折叠
-"zf zo zc zd zr zm zR zM zn zi zN
-"   manual  手工定义折叠
-"   indent  更多的缩进表示更高级别的折叠
-"   expr    用表达式来定义折叠
-"   syntax  用语法高亮来定义折叠
-"   diff    对没有更改的文本进行折叠
-" set foldlevel=2
-set foldmethod=marker "依标记折叠
 
 "color
 let base16colorspace=256  " Access colors present in 256 colorspace
@@ -87,21 +74,34 @@ set backspace=indent,eol,start
 " basics }}}
 
 "p keys{{{2
+" fold
+"设置折叠模式
 let mapleader = ","
 " setfolder kay
 map <Leader>ffs <esc>:set foldmethod=syntax<CR>
 map <Leader>ffi <esc>:set foldmethod=indent<CR>
 map <Leader>ffm <esc>:set foldmethod=marker<CR>
-"F2 切换粘贴模式
+set foldcolumn=3
+"set foldopen=all "光标遇到折叠，折叠就打开
+"set foldclose=all "移开折叠时自动关闭折叠
+"zf zo zc zd zr zm zr zm zn zi zn
+"   manual  手工定义折叠
+"   indent  更多的缩进表示更高级别的折叠
+"   expr    用表达式来定义折叠
+"   syntax  用语法高亮来定义折叠
+"   diff    对没有更改的文本进行折叠
+" set foldlevel=2
+set foldmethod=marker "依标记折叠
+"f2 切换粘贴模式
 set pastetoggle=<F2>
 " 定义快捷键到行首和行尾
 nmap <Leader>b 0
 nmap <leader>e $
 " ctrl hkjl 进行屏幕跳转
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+" nmap <silent> <c-k> :wincmd k<CR>
+" nmap <silent> <c-j> :wincmd j<CR>
+" nmap <silent> <c-h> :wincmd h<CR>
+" nmap <silent> <c-l> :wincmd l<CR>
 
 " tab 跳转
 map <Leader>n <esc>:tabprevious<CR>
