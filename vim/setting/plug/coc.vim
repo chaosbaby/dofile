@@ -51,6 +51,19 @@ else
   imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
+nmap tt :CocCommand explorer<CR>
+" " coc-translator
+" nmap ts <Plug>(coc-translator-p)
+" vmap ts <Plug>(coc-translator-p)
+" popup
+nmap <Leader>t <Plug>(coc-translator-p)
+vmap <Leader>t <Plug>(coc-translator-pv)
+" " echo
+" nmap <Leader>e <Plug>(coc-translator-e)
+" nmap <Leader>e <Plug>(coc-translator-ev)
+" " replace
+" nmap <Leader>r <Plug>(coc-translator-r)
+" nmap <Leader>r <Plug>(coc-translator-rv)
 " Use `[g` and `]g` to navigate diagnostics
 " nmap <silent> zp <Plug>(GitGutterPrevHunk)
 " nmap <silent> zn <Plug>(GitGutterNextHunk)
@@ -146,6 +159,29 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+let g:coc_global_extensions =[
+            \'coc-snippets',
+            \'coc-lists',
+            \'coc-python',
+            \'coc-vimlsp',
+            \'coc-json',
+            \'coc-gitignore',
+            \'coc-explorer',
+            \'coc-git',
+            \'coc-yank',
+            \'coc-translator',
+            \
+            \'coc-html',
+            \'coc-tsserver',
+            \'coc-css',
+            \'coc-tailwindcss',
+            \'coc-stylelint',
+            \'coc-tslint',
+            \'coc-pyright',
+            \'coc-sourcekit',
+            \'coc-flutter'
+            \]
 
 " let g:coc_global_extensions = [
 "             \     'coc-snippets',
