@@ -1,5 +1,5 @@
 curPath=$(dirname $(readlink -f "$0"))
-yum install git -y
+sudo yum install git -y
 
 git config --global user.email "50092526@qq.com"
 git config --global user.name "chaos"
