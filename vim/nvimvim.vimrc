@@ -14,12 +14,14 @@ endfunction
 
 call plug#begin('~/.vim/plugged')
 
-" FILESYSTEM & NAVI {{{2 "
+" FILESYSTEM & NAVI {{{w2 "
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
+" Plug 'Yggdroot/LeaderF'
+Plug 'liuchengxu/vista.vim'
 Plug  'majutsushi/tagbar'
 " }}} FILESYSTEM "
 
@@ -29,6 +31,10 @@ Plug  'tpope/vim-commentary'
 Plug  'tpope/vim-repeat'
 Plug 'terryma/vim-multiple-cursors'
 " }}} VERB "
+"
+" LANGUAGE {{{ "
+Plug 'fatih/vim-go'
+" }}} LANGUAGE "
 
 " SYNTAX & COMPLETION {{{2
 Plug  'SirVer/ultisnips'
