@@ -1,8 +1,8 @@
 function SourceVim(path)
-   if filereadable(a:path)
-       echo a:path
-       execute "source ".a:path
-   endif
+    if filereadable(a:path)
+        echo a:path
+        execute "source ".a:path
+    endif
 endfunction
 " call SourceVim($HOME."/.config/plug/all.vimrc")
 " call SourceVim($HOME."/.config/plug/nerdTree.vimrc")
@@ -27,8 +27,8 @@ Plug  'majutsushi/tagbar'
 
 " VERB {{{2
 Plug 'tpope/vim-surround'
-Plug  'tpope/vim-commentary'
-Plug  'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
 Plug 'terryma/vim-multiple-cursors'
 " }}} VERB "
 "
@@ -36,10 +36,11 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'fatih/vim-go'
 " }}} LANGUAGE "
 
-" SYNTAX & COMPLETION {{{2
-Plug  'SirVer/ultisnips'
-Plug  'honza/vim-snippets'
+" SYNTAX & COMPLETION & FORMAT {{{2
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'Chiel92/vim-autoformat'
 " Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
@@ -51,8 +52,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " }}}SYNTAX & COMPLETION"
 "
 " GIT HELPER {{{2"
-Plug  'tpope/vim-fugitive'
-Plug  'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 " }}} GIT HELPER "
 
 Plug 'flazz/vim-colorschemes'
