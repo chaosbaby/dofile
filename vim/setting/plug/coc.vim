@@ -169,6 +169,7 @@ let g:coc_global_extensions =[
             \'coc-pairs',
             \'coc-python',
             \'coc-vimlsp',
+            \'coc-yaml',
             \'coc-json',
             \'coc-git',
             \'coc-yank',
