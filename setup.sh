@@ -3,6 +3,7 @@ sudo yum upgrade -y
 sudo yum update -y
 yum install net-tool -y #for wget
 yum -y install wget unzip
+yum -y install zsh
 # }}} base pre install tool #
 
 # git install and setting {{{ #
@@ -34,8 +35,8 @@ if [[ -d ~/.oh-my-zsh ]]; then
     echo ".oh-my-zsh file already here , pass installation"
 else
     echo "Install oh-my-zsh ..."
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     source ~/.zshrc
 fi
 # }}} zsh and zplug install and setting  #
