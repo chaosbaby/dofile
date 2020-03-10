@@ -13,6 +13,15 @@ sudo yum -y install tmux
 yum install -y epel-release.noarch
 yum install -y the_silver_searcher
 
+# install ruby and gem use gem install gist neovim for coc-ruby-server
+yum install -y ruby
+gem install gist
+# gem install neovim
+cd ~
+gem environment
+
+# install neovim for coc-node-server
+npm install -g neovim
 
 # git install and setting {{{ #
 sudo yum install git -y

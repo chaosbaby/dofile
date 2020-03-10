@@ -25,4 +25,5 @@ else
     ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3
     ln -s /usr/local/python3/bin/pip3 /usr/local/bin/pip3
     ln -s /usr/local/python3/bin/python3.8m-config /usr/bin/python3.8m-config
+    python3 -m pip install --user --upgrade pynvim
 fi
