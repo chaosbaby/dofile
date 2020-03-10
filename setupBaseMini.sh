@@ -16,8 +16,7 @@ cd ${dofilesPath}/python3
 sh ${dofilesPath}/python3/setup_3.8.1.sh
 
 ## dofiles: tmux
-cd ${dofilesPath}/tmux
-sh ${dofilesPath}/tmux/setup.sh
+sudo yum -y install tmux
 
 # dofiles: zsh
 cd ${dofilesPath}/zsh
