@@ -14,21 +14,13 @@ git config --global core.excludesfile $HOME/.gitignore_global
 git config --global include.path $HOME/.gitaliases
 # }}} git install and setting #
 
-# zsh and zplug install and setting  {{{ #
-if [[ ! -d ~/.oh-my-zsh ]]; then
-    echo "Install oh-my-zsh ..."
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
-    curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-source ~/.zshrc
-# }}} zsh and zplug install and setting  #
-
 # hub install and setting {{{ #
 mkdir ~/tool
 cd ~/tool
 if [ -d ~/tool/hub-linux-amd64-2.11.1 ]; then
-    echo "文件夹存在"
+    echo "hub file already here , pass installation"
 else
+    echo "start install hub"
     wget https://github.com/github/hub/releases/download/v2.11.1/hub-linux-amd64-2.11.1.tgz
     tar zxvf hub-linux-amd64-2.11.1.tgz
     sudo ln -s ~/tool/hub-linux-amd64-2.11.1/bin/hub /usr/bin/hub
@@ -36,3 +28,14 @@ fi
 # }}} hub install and setting #
 
 sudo yum -y install tmux
+
+# zsh and zplug install and setting it should install the last {{{ #
+if [[ -d ~/.oh-my-zsh ]]; then
+    echo ".oh-my-zsh file already here , pass installation"
+else
+    echo "Install oh-my-zsh ..."
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+    source ~/.zshrc
+fi
+# }}} zsh and zplug install and setting  #
