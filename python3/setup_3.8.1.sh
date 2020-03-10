@@ -16,8 +16,8 @@ tar -xvJf  Python-3.8.1.tar.xz
 fi
 mkdir /usr/local/python3 #创建编译安装目录
 cd Python-3.8.1
-# ./configure --prefix=/usr/local/python3 --with-ssl
-./configure --prefix=/usr/local/python3 --enable-optimizations
+./configure --prefix=/usr/local/python3 --with-ssl
+#./configure --prefix=/usr/local/python3 --enable-optimizations
 # make && make install
 make
 make install
