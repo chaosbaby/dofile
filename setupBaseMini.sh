@@ -11,13 +11,9 @@ git setting
 cd ${dofilesPath}/git
 sh ${dofilesPath}/git/setup.sh
 
-# hub install
-cd ${dofilesPath}/hub
-sh ${dofilesPath}/hub/setup.sh
-
 python3
 cd ${dofilesPath}/python3
-sh ${dofilesPath}/python3/setup_3.7.3.sh
+sh ${dofilesPath}/python3/setup_3.8.1.sh
 
 ## dofiles: tmux
 cd ${dofilesPath}/tmux
@@ -26,3 +22,7 @@ sh ${dofilesPath}/tmux/setup.sh
 # dofiles: zsh
 cd ${dofilesPath}/zsh
 sh ${dofilesPath}/zsh/setup.sh
+
+# hub install
+cd ${dofilesPath}/hub
+sh ${dofilesPath}/hub/setup.sh
