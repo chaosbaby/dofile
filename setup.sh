@@ -6,6 +6,14 @@ yum -y install wget unzip
 yum -y install zsh
 # }}} base pre install tool #
 
+# install tmux
+sudo yum -y install tmux
+
+# install ag
+yum install -y epel-release.noarch
+yum install -y the_silver_searcher
+
+
 # git install and setting {{{ #
 sudo yum install git -y
 git config --global user.email "50092526@qq.com"
@@ -28,7 +36,6 @@ else
 fi
 # }}} hub install and setting #
 
-sudo yum -y install tmux
 
 # zsh and zplug install and setting it should install the last {{{ #
 if [[ -d ~/.oh-my-zsh ]]; then
