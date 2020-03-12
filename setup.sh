@@ -2,7 +2,7 @@
 sudo yum upgrade -y
 sudo yum update -y
 yum install net-tool -y #for wget
-yum -y install wget unzip
+yum -y install wget unzip bzip2
 yum -y install zsh
 # }}} base pre install tool #
 
