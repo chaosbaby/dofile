@@ -45,14 +45,14 @@ else
 fi
 # }}} hub install and setting #
 
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
 # zsh and zplug install and setting it should install the last {{{ #
-if [[ -d ~/.oh-my-zsh ]]; then
-    echo ".oh-my-zsh file already here , pass installation"
-else
-    echo "Install oh-my-zsh ..."
-    curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    source ~/.zshrc
-fi
+# if [[ -d ~/.oh-my-zsh ]]; then
+#     echo ".oh-my-zsh file already here , pass installation"
+# else
+#     echo "Install oh-my-zsh ..."
+#     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#     source ~/.zshrc
+# fi
 # }}} zsh and zplug install and setting  #
