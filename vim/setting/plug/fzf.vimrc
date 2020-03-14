@@ -3,7 +3,7 @@
 " Plug 'junegunn/fzf.vim'
 " call plug#end()
 noremap <silent> <C-p> :Files<CR>
-noremap <silent> <C-b> :Buffers<CR>
+" noremap <silent> <C-b> :Buffers<CR>
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
