@@ -9,6 +9,12 @@ sudo apt-get upgrade -y
 # install ag
 sudo apt-get install silversearcher-ag
 
+#install bat
+mkdir ~/tool
+cd ~/tool
+wget https://github.com/sharkdp/bat/releases/download/v0.13.0/bat_0.13.0_amd64.deb
+sudo dpkg -i bat_0.13.0_amd64.deb
+
 # install ripgrep for fast code search
 mkdir ~/tool
 cd ~/tool
