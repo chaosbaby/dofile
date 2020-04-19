@@ -28,4 +28,6 @@ else
     python3 -m pip install --user --upgrade pynvim
     python3 -m pip install --user --upgrade tldr
     python3 -m pip install --user --upgrade thefuck
+    python3 -m pip install --user --upgrade pygments
+    python3 -m pip install --user --upgrade jedi
 fi

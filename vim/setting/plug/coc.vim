@@ -160,23 +160,23 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-let g:coc_global_extensions =[
-            \'coc-snippets',
-            \'coc-explorer',
-            \'coc-gitignore',
-            \'coc-lists',
-            \'coc-prettier',
-            \'coc-pairs',
-            \'coc-python',
-            \'coc-vimlsp',
-            \'coc-yaml',
-            \'coc-json',
-            \'coc-git',
-            \'coc-yank',
-            \'coc-translator',
-            \
-            \'coc-html',
-            \]
+" let g:coc_global_extensions =[
+"             \'coc-snippets',
+"             \'coc-explorer',
+"             \'coc-gitignore',
+"             \'coc-lists',
+"             \'coc-pairs',
+"             \'coc-python',
+"             \'coc-vimlsp',
+"             \'coc-yaml',
+"             \'coc-json',
+"             \'coc-yank',
+"             \'coc-translator',
+"             \]
+
+            " \'coc-git',
+            " \'coc-html',
+            " \'coc-prettier',
             " \'coc-tsserver',
             " \'coc-tslint',
             " \'coc-tailwindcss',
