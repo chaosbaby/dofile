@@ -1,6 +1,5 @@
 " VIM BASE IDE SETTING {{{1
 " basics {{{2
-filetype on
 filetype plugin indent on
 syntax on
 set number
@@ -129,7 +128,10 @@ inoremap Jk <ESC> :w <ESC>
 map <F5> <Esc>:w <CR> :call CompileRunGcc() <CR>:!date <CR>
 func! CompileRunGcc()
     exec "w"
-    if &filetype == 'c'
+    if &filetype == 'vim'
+        exec "source %"
+        exec "echo 'aa'"
+    elseif &filetype == 'c'
         exec "!g++ % -o %<"
         exec "!time ./%<"
     elseif &filetype == 'cpp'
