@@ -15,7 +15,7 @@ endfunction
 
 call plug#begin('~/.vim/plugged')
 
-" FILESYSTEM & NAVI {{{w2 "
+" FILESYSTEM & NAVI {{{"
 Plug 'Yggdroot/LeaderF'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
@@ -30,7 +30,6 @@ Plug  'majutsushi/tagbar'
 " VERB {{{2
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-
 Plug 'tpope/vim-repeat'
 " }}} VERB "
 "
@@ -47,8 +46,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 " SYNTAX & COMPLETION & FORMAT {{{2
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Chiel92/vim-autoformat'
+Plug 'junegunn/vim-easy-align'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
@@ -262,3 +262,10 @@ let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'
 " }}} markdown preview "
 
+" vim-easy-align {{{ "
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+" }}} vim-easy-align "
