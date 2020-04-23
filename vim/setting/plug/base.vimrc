@@ -26,9 +26,13 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" Useful settings
+" history and undo
 set history=700 "设置命令历史行数
 set undolevels=700
+set undofile
+set undodir=~/.vim/undodir
+
+" search enhangce
 set wildmenu " vim 自身命令行模式智能补全
 set path+=** " find path Recursively
 

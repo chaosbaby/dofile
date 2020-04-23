@@ -96,12 +96,14 @@ Plug 'airblade/vim-gitgutter'
 Plug 'lfv89/vim-interestingwords'
 Plug 'itchyny/vim-cursorword'
 Plug 'flazz/vim-colorschemes'
+" pop schemes molokai hybrid gruvbox
 Plug 'Yggdroot/indentLine'
 " }}} view-enhangce "
 "
 " misc {{{ "
 Plug 'skywind3000/asyncrun.vim'
 Plug 'mhinz/vim-startify'
+Plug 'farmergreg/vim-lastplace'
 " }}} misc "
 
 call plug#end()
