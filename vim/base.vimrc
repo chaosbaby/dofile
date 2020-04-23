@@ -96,9 +96,13 @@ Plug 'airblade/vim-gitgutter'
 Plug 'lfv89/vim-interestingwords'
 Plug 'itchyny/vim-cursorword'
 Plug 'flazz/vim-colorschemes'
+Plug 'Yggdroot/indentLine'
 " }}} view-enhangce "
-
+"
+" misc {{{ "
 Plug 'skywind3000/asyncrun.vim'
+Plug 'mhinz/vim-startify'
+" }}} misc "
 
 call plug#end()
 
