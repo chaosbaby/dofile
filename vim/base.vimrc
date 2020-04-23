@@ -104,6 +104,9 @@ Plug 'Yggdroot/indentLine'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'mhinz/vim-startify'
 Plug 'farmergreg/vim-lastplace'
+Plug 'tpope/vim-obsession'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
 " }}} misc "
 
 call plug#end()
@@ -275,3 +278,13 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 " }}} vim-easy-align "
+
+" vim-session {{{
+let g:session_autoload = 'no'
+let g:session_autosave = 'no'
+let g:session_command_aliases = 'no'
+nnoremap <leader>so :OpenSession
+nnoremap <leader>ss :SaveSession
+nnoremap <leader>sd :DeleteSession<CR>
+nnoremap <leader>sc :CloseSession<CR>
+" }}} vim-session ""
