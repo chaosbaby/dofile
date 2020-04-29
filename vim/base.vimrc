@@ -140,18 +140,19 @@ nmap <space>w <C-w>
 " 		\   'cache_enabled': 1,
 " 		\ }
 
-let g:clipboard = {
-        \   'name': 'myClipboard',
-        \   'copy': {
-        \      '+': {lines, regtype -> extend(g:, {'foo': [lines, regtype]}) },
-        \      '*': {lines, regtype -> extend(g:, {'foo': [lines, regtype]}) },
-        \    },
-        \   'paste': {
-        \      '+': {-> get(g:, 'foo', [])},
-        \      '*': {-> get(g:, 'foo', [])},
-        \   },
-        \ }
+" let g:clipboard = {
+"         \   'name': 'myClipboard',
+"         \   'copy': {
+"         \      '+': {lines, regtype -> extend(g:, {'foo': [lines, regtype]}) },
+"         \      '*': {lines, regtype -> extend(g:, {'foo': [lines, regtype]}) },
+"         \    },
+"         \   'paste': {
+"         \      '+': {-> get(g:, 'foo', [])},
+"         \      '*': {-> get(g:, 'foo', [])},
+"         \   },
+"         \ }
 
+set clipboard=unnamedplus
 command! -bang -nargs=* -complete=file Make AsyncRun -program=make @ <args>
 let g:asyncrun_status = ''
 let g:airline_section_error = airline#section#create_right(['%{g:asyncrun_status}'])
