@@ -24,13 +24,14 @@ Plug 'terryma/vim-multiple-cursors'
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'liuchengxu/vista.vim'
-Plug  'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 " }}} FILESYSTEM "
 
 " VERB {{{2
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-abolish'
 " }}} VERB "
 "
 " LANGUAGE {{{ "
