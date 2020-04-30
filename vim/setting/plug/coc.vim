@@ -192,3 +192,8 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 " Close the preview window when completion is done.
  autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" coc-spell-checker {{{ "
+vmap <leader>a <Plug>(coc-codeaction-selected)
+nmap <leader>a <Plug>(coc-codeaction-selected)
+" }}} coc-spell-checker "
