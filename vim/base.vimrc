@@ -50,6 +50,7 @@ Plug 'honza/vim-snippets'
 Plug 'Chiel92/vim-autoformat'
 Plug 'junegunn/vim-easy-align'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-python', {'do': 'yarn install --frozen-lockfile'}
@@ -60,16 +61,16 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'voldikss/coc-translator', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-"
 " Plug 'iamcco/coc-spell-checker', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'voldikss/coc-todolist', {'do': 'yarn install --frozen-lockfile'}
-"
-" Plug '', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+
 " Plug 'neoclide/coc-pairs', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'voldikss/coc-todolist', {'do': 'yarn install --frozen-lockfile'}
+
+
+" Plug '', {'do': 'yarn install --frozen-lockfile'}
 
             " \'coc-snippets',
             " \'coc-git',

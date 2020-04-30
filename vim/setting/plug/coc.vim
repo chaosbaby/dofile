@@ -160,32 +160,26 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-" let g:coc_global_extensions =[
-"             \'coc-snippets',
-"             \'coc-explorer',
-"             \'coc-gitignore',
-"             \'coc-lists',
+let g:coc_global_extensions =[
+            \'coc-snippets',
+            \'coc-explorer',
+            \'coc-python',
+            \'coc-yank',
+            \'coc-json',
+            \'coc-vimlsp',
+            \'coc-gitignore',
+            \'coc-lists',
+            \'coc-translator',
+            \'coc-prettier',
+            \'coc-spell-checker',
+            \'coc-git',
+            \]
+
+"             \'coc-eslint',
+"             \'coc-tsserver',
 "             \'coc-pairs',
-"             \'coc-python',
-"             \'coc-vimlsp',
-"             \'coc-yaml',
-"             \'coc-json',
-"             \'coc-yank',
-"             \'coc-translator',
-"             \]
-
-            " \'coc-git',
-            " \'coc-html',
-            " \'coc-prettier',
-            " \'coc-tsserver',
-            " \'coc-tslint',
-            " \'coc-tailwindcss',
-            " \'coc-css',
-            " \'coc-stylelint',
-            " \'coc-sourcekit',
-            " \'coc-pyright',
-            " \'coc-flutter',
-
+"             \'coc-todolist',
+"
 " }}} plug coc.nvim "
 "Use <Tab> and <S-Tab> <c-j> <c-k> to navigate the completion list:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
