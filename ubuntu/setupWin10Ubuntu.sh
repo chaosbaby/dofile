@@ -10,12 +10,12 @@ sudo apt-get upgrade -y
 sudo apt-get install silversearcher-ag
 
 #install bat
+version="v0.15.0"
 mkdir ~/tool
 cd ~/tool
-wget https://github.com/sharkdp/bat/releases/download/v0.13.0/bat_0.13.0_amd64.deb
-sudo dpkg -i bat_0.13.0_amd64.deb
-
+wget https://github.com/sharkdp/bat/releases/download/$version/bat-$version-x86_64-unknown-linux-musl.tar.gz -O - |tar -xvzf - -C /usr/local/bin && mv /usr/local/bin/bat-$version-x86_64-unknown-linux-musl/bat /usr/local/bin/bat
 # install ripgrep for fast code search
+
 mkdir ~/tool
 cd ~/tool
 sudo yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
