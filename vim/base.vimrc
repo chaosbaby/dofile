@@ -92,6 +92,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " GIT HELPER {{{2"
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/gv.vim'
 " }}} GIT HELPER "
 
 " view-enhangce {{{ "
@@ -110,6 +111,7 @@ Plug 'tpope/vim-obsession'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 Plug 'jpalardy/vim-slime'
+Plug 'ianding1/leetcode.vim'
 " }}} misc "
 
 call plug#end()
@@ -299,3 +301,12 @@ let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": get(split($TMUX, ","), 0), "target_pane": ":.2"}
 let g:slime_python_ipython = 1
 " }}} vim-slime "
+
+" leetcode {{{ "
+let g:leetcode_browser="chrome"
+let g:leetcode_china=1
+nnoremap <leader>ll :LeetCodeList<cr>
+nnoremap <leader>lt :LeetCodeTest<cr>
+nnoremap <leader>ls :LeetCodeSubmit<cr>
+nnoremap <leader>li :LeetCodeSignIn<cr>
+" }}} leetcode ""
