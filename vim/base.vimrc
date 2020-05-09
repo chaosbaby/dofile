@@ -310,3 +310,8 @@ nnoremap <leader>lt :LeetCodeTest<cr>
 nnoremap <leader>ls :LeetCodeSubmit<cr>
 nnoremap <leader>li :LeetCodeSignIn<cr>
 " }}} leetcode ""
+
+" vim-gitgutter {{{ "
+nmap <space>j <Plug>(GitGutterNextHunk)
+nmap <space>k <Plug>(GitGutterPrevHunk)
+" }}} vim-gitgutter "
