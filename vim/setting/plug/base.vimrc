@@ -101,10 +101,10 @@ set pastetoggle=<F2>
 nmap <Leader>b 0
 nmap <leader>e $
 " ctrl hkjl 进行屏幕跳转
-" nmap <silent> <c-k> :wincmd k<CR>
-" nmap <silent> <c-j> :wincmd j<CR>
-" nmap <silent> <c-h> :wincmd h<CR>
-" nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
 
 " tab 跳转
 map <Leader>n <esc>:tabprevious<CR>
