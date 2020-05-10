@@ -20,11 +20,10 @@ Plug 'Yggdroot/LeaderF'
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-multiple-cursors'
-" Plug 'scrooloose/nerdtree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'liuchengxu/vista.vim'
 Plug 'majutsushi/tagbar'
+Plug 'easymotion/vim-easymotion'
 " }}} FILESYSTEM "
 
 " VERB {{{2
@@ -180,13 +179,15 @@ let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " let g:vimwiki_list = [{'path': '~/vimwiki/', 'ext': '.md'}]
-" }}} vimwiki "
- set mouse=
 
- if has("autocmd")
-     " autocmd FileType vimwiki set ft=markdown
-     autocmd FileType vimwiki,markdown source ~/.dotfiles/vim/setting/plug/md.vimrc
- endif
+set mouse=
+
+if has("autocmd")
+    " autocmd FileType vimwiki set ft=markdown
+    autocmd FileType vimwiki,markdown source ~/.dotfiles/vim/setting/plug/md.vimrc
+endif
+
+" }}} vimwiki "
 
 " markdown preview {{{ "
 " example
@@ -315,3 +316,22 @@ nnoremap <leader>li :LeetCodeSignIn<cr>
 nmap <space>j <Plug>(GitGutterNextHunk)
 nmap <space>k <Plug>(GitGutterPrevHunk)
 " }}} vim-gitgutter "
+
+" vim-easymotion {{{ "
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-overwin-f)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+" }}} vim-easymotion "
