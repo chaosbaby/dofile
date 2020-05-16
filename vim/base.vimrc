@@ -106,11 +106,9 @@ Plug 'Yggdroot/indentLine'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'mhinz/vim-startify'
 Plug 'farmergreg/vim-lastplace'
-Plug 'tpope/vim-obsession'
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
 Plug 'jpalardy/vim-slime'
 Plug 'ianding1/leetcode.vim'
+Plug 'liuchengxu/vim-which-key'
 " }}} misc "
 
 call plug#end()
@@ -286,16 +284,6 @@ xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 " }}} vim-easy-align "
 
-" vim-session {{{
-let g:session_autoload = 'no'
-let g:session_autosave = 'no'
-let g:session_command_aliases = 'no'
-nnoremap <leader>so :OpenSession
-nnoremap <leader>ss :SaveSession
-nnoremap <leader>sd :DeleteSession<CR>
-nnoremap <leader>sc :CloseSession<CR>
-" }}} vim-session ""
-
 " vim-slime {{{ "
 let g:slime_target = "tmux"
 " let g:slime_default_confit = {"socket_name": "default", "target_pane": "{last}"}
@@ -335,3 +323,11 @@ let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 " }}} vim-easymotion "
+"
+"
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+set timeoutlen=500
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
+nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
